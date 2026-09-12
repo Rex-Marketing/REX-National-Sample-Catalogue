@@ -1,0 +1,28 @@
+NATIONAL — AT THE HEART OF HOME
+Animated page-flip catalogue
+
+WHAT'S IN HERE
+  index.html   the whole viewer (one file — all CSS and JavaScript inside)
+  pages/       the 12 catalogue pages, full quality (used for viewing + zoom)
+  thumbs/      the 12 small thumbnails (used by the Contents panel)
+  National-Catalogue.pdf   the original PDF, for anyone who asks for the file
+
+TO PREVIEW IT ON YOUR OWN MACHINE
+  Double-click index.html. It opens in your browser and works offline.
+
+TO PUT IT ONLINE
+  Upload the WHOLE folder (keep the pages/ and thumbs/ folders next to
+  index.html) to any web host. No database, no server code, no build step.
+
+  Easiest:  app.netlify.com/drop  — drag the folder onto the page, you get a
+            link in about ten seconds. Free.
+  Also fine: Cloudflare Pages, Vercel, GitHub Pages.
+  Your own hosting: upload the folder via cPanel File Manager or FTP into
+            public_html, e.g. public_html/catalogue/ — it then lives at
+            yourdomain.com/catalogue/
+
+TO REPLACE THE CATALOGUE WITH A NEW ONE
+  Export the new PDF pages as images named 01.webp ... 12.webp into pages/
+  (and matching small versions into thumbs/). If the page count changes,
+  edit the PAGES list near the top of the <script> block in index.html —
+  each line is one page with its section and title.
